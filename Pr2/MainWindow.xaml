@@ -1,0 +1,34 @@
+﻿<Window x:Class="Pr2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pr2"
+        mc:Ignorable="d"
+        Title="Практическая работа №3" Height="450" Width="800">
+    <Grid>
+        <Menu>
+            <MenuItem Header="Управление">
+                <MenuItem Header="Матрица">
+                    <MenuItem Header="Сгенерировать" Click="btn_Generate"/>
+                    <MenuItem Header="Открыть" Click="btn_Open"/>
+                    <MenuItem Header="Сохранить" Click="btn_Save"/>
+                    <MenuItem Header="Очистить" Click="btn_Clear"/>
+                </MenuItem>
+                <MenuItem Header="Найти номер строки с максимальной суммой" Click="btn_Prod"/>
+                <MenuItem Header="Очистить всё" Click="btn_AllClear"/>
+            </MenuItem>
+            <MenuItem Header="Выход" Click="btn_Exit"/>
+            <MenuItem Header="О программе" Click="btn_Info"/>
+        </Menu>
+        <GroupBox Header="Матрица" Margin="10,39,10,29">
+            <Grid>
+                <TextBox x:Name="tb_M" HorizontalAlignment="Left" Margin="10,234,0,0" TextWrapping="Wrap" Text="Введите кол-во строк" VerticalAlignment="Top" Width="139" Height="36" MouseDoubleClick="click_Clear"/>
+                <TextBox x:Name="tb_N" HorizontalAlignment="Left" Margin="10,297,0,0" TextWrapping="Wrap" Text="Введите кол-во столбцов" VerticalAlignment="Top" Width="139" Height="36" MouseDoubleClick="click_Clear2"/>
+                <DataGrid x:Name="dg_Matrix" Margin="0,0,0,127" IsEnabled="False"/>
+                <TextBox x:Name="tb_Save" HorizontalAlignment="Left" Margin="209,234,0,0" TextWrapping="Wrap" Text="Введите имя файла.." VerticalAlignment="Top" Width="120" MouseDoubleClick="click_Clear3"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>
