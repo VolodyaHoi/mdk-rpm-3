@@ -7,6 +7,8 @@ using System.IO;
 using System.Data;
 using System.Windows;
 
+// Добавлен комментарий, чтобы сделать коммит
+
 namespace LibMas
 {
     public class libmas
